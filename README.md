@@ -1,5 +1,10 @@
 # SysSatAngular
 
+Este é um projeto pessoal, feito para empresa de meu pai.
+Ademais, servirá para completar meu TCC da faculdade, e como portfolio pessoal.
+
+Logo abaixo, o arquivo README.MD padrão do Angular CLI.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server
