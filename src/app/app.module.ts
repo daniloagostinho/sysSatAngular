@@ -1,3 +1,4 @@
+import { SysSatComponent } from './sys-sat/sys-sat.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,7 +11,8 @@ import { RoutesModule } from './routes/routes.module';
 @NgModule({
   declarations: [
     AppComponent,
-    FuncionarioComponent
+    FuncionarioComponent,
+    SysSatComponent
   ],
   imports: [
     BrowserModule,
