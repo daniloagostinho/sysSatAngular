@@ -1,9 +1,15 @@
-# SysSatAngular
+
+# Breve resumo deste repositório
 
 Este é um projeto pessoal, feito para empresa de meu pai.
 Ademais, servirá para completar meu TCC da faculdade, e como portfolio pessoal.
 
-Logo abaixo, o arquivo README.MD padrão do Angular CLI.
+Este projeto consumirá informações de uma API construída em .Net Core, também construída por mim.
+O projeto da API pode ser conferido no meu próprio perfil. O nome do repositório é sysSat
+
+Logo abaixo, o arquivo README.MD padrão gerado pelo Angular CLI.
+
+# SysSatAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
