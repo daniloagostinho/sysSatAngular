@@ -1,3 +1,4 @@
+import { FormControl } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sys-sat.component.scss']
 })
 export class SysSatComponent implements OnInit {
+
+  mode = new FormControl('over');
 
   constructor() { }
 
