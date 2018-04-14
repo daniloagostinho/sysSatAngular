@@ -1,42 +1,89 @@
-<div class="mat-app-background basic-container">
-
+<div class=" basic-container">
   <mat-sidenav-container class="example-container">
     <mat-sidenav #sidenav [mode]="mode.value">
-      <p>
-        <button mat-button (click)="sidenav.toggle()">Toggle</button>
+      <p class="sidenav-p-logo">
+        <img src="../../assets/logo.png" class="img-fluid logo" alt="SIMYSAT">
       </p>
+
+
+
       <mat-expansion-panel>
         <mat-expansion-panel-header>
-          <mat-panel-title>
-            This is the expansion title
-          </mat-panel-title>
-          <mat-panel-description>
-            This is a summary of the content
-          </mat-panel-description>
+          Edifícios
         </mat-expansion-panel-header>
-
-        <p>This is the primary content of the panel.</p>
+        <div class="row">
+          <div class="col-12">
+            <button mat-button sidenav-button>Cadastrar</button>
+            <button mat-button sidenav-button>Gerenciar</button>
+          </div>
+        </div>
 
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            This is the expansion title
+            Funcionários
           </mat-panel-title>
-          <mat-panel-description>
-            This is a summary of the content
-          </mat-panel-description>
         </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-12">
+            <button mat-button sidenav-button>Cadastrar</button>
+            <button mat-button sidenav-button>Gerenciar</button>
+          </div>
+        </div>
 
-        <p>This is the primary content of the panel.</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Orçamentos
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-12">
+            <button mat-button sidenav-button>Cadastrar</button>
+            <button mat-button sidenav-button>Gerenciar</button>
+          </div>
+        </div>
+
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Ordens de serviço
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-12">
+            <button mat-button sidenav-button>Cadastrar</button>
+            <button mat-button sidenav-button>Gerenciar</button>
+          </div>
+        </div>
 
       </mat-expansion-panel>
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <p>
-        <button mat-button (click)="sidenav.toggle()">Toggle</button>
-      </p>
+      <div class="row zero-margin">
+        <div class="col-md-4">
+          <button mat-button (click)="sidenav.toggle()">
+            <mat-icon>dehaze</mat-icon>
+          </button>
+
+        </div>
+        <div class="col-md-4 ml-auto">
+          <div class="align-right">
+            <button mat-button [matMenuTriggerFor]="menu">
+              <mat-icon>person</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Perfil</button>
+              <button mat-menu-item>Logout</button>
+            </mat-menu>
+          </div>
+        </div>
+      </div>
+
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
