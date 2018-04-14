@@ -1,8 +1,8 @@
 import { SysSatComponent } from './sys-sat/sys-sat.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -37,8 +37,8 @@ import {
   MatToolbarModule,
   MatTooltipModule,
 } from '@angular/material';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { FuncionarioComponent } from './sys-sat/funcionario/funcionario.component';
 import { RoutesModule } from './routes/routes.module';
@@ -136,10 +136,7 @@ import { OrcamentosComponent } from './sys-sat/orcamentos/orcamentos.component';
     MatTooltipModule,
   ],
   providers: [],
-  entryComponents:[SysSatComponent],
-  bootstrap: [AppComponent, SysSatComponent],
+  bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
-
-platformBrowserDynamic().bootstrapModule(AppModule);
