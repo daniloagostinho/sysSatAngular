@@ -45,6 +45,8 @@ import { RoutesModule } from './routes/routes.module';
 import { EdificiosComponent } from './sys-sat/edificios/edificios.component';
 import { CdkTableModule } from '@angular/cdk/table';
 import { HttpClientModule } from '@angular/common/http';
+import { OrdemServicoComponent } from './sys-sat/ordem-servico/ordem-servico.component';
+import { OrcamentosComponent } from './sys-sat/orcamentos/orcamentos.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { HttpClientModule } from '@angular/common/http';
     FuncionarioComponent,
     SysSatComponent,
     EdificiosComponent,
+    OrcamentosComponent,
+    OrdemServicoComponent
   ],
   imports: [
     FormsModule,
