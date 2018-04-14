@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Router } from '@angular/router';
 import { FuncionarioComponent } from '../sys-sat/funcionario/funcionario.component';
+import { EdificiosComponent } from '../sys-sat/edificios/edificios.component';
 
 const routes: Routes = [
-  { path: 'funcionario', component: FuncionarioComponent }
+  { path: 'funcionario', component: FuncionarioComponent },
+  { path: 'edificios', component: EdificiosComponent },
 ];
 
 @NgModule({
