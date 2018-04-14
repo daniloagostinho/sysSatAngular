@@ -4,17 +4,15 @@
       <p class="sidenav-p-logo">
         <img src="../../assets/logo.png" class="img-fluid logo" alt="SIMYSAT">
       </p>
-
-
-
+      
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           Edifícios
         </mat-expansion-panel-header>
         <div class="row">
           <div class="col-12">
-            <button mat-button sidenav-button>Cadastrar</button>
-            <button mat-button sidenav-button>Gerenciar</button>
+            <button routerLink="/edificios" mat-button sidenav-button>Cadastrar</button>
+            <button routerLink="/edificios" mat-button sidenav-button>Gerenciar</button>
           </div>
         </div>
 
@@ -27,8 +25,8 @@
         </mat-expansion-panel-header>
         <div class="row">
           <div class="col-12">
-            <button mat-button sidenav-button>Cadastrar</button>
-            <button mat-button sidenav-button>Gerenciar</button>
+            <button routerLink="/funcionarios" mat-button sidenav-button>Cadastrar</button>
+            <button routerLink="/funcionarios" mat-button sidenav-button>Gerenciar</button>
           </div>
         </div>
 
@@ -65,13 +63,13 @@
 
     <mat-sidenav-content>
       <div class="row zero-margin">
-        <div class="col-md-4">
+        <div class="col-sm-1">
           <button mat-button (click)="sidenav.toggle()">
             <mat-icon>dehaze</mat-icon>
           </button>
 
         </div>
-        <div class="col-md-4 ml-auto">
+        <div class="col-sm-1 ml-auto">
           <div class="align-right">
             <button mat-button [matMenuTriggerFor]="menu">
               <mat-icon>person</mat-icon>
@@ -83,6 +81,8 @@
           </div>
         </div>
       </div>
+
+      <router-outlet></router-outlet>
 
     </mat-sidenav-content>
   </mat-sidenav-container>

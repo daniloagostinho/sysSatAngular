@@ -4,7 +4,7 @@ import { FuncionarioComponent } from '../sys-sat/funcionario/funcionario.compone
 import { EdificiosComponent } from '../sys-sat/edificios/edificios.component';
 
 const routes: Routes = [
-  { path: 'funcionario', component: FuncionarioComponent },
+  { path: 'funcionarios', component: FuncionarioComponent },
   { path: 'edificios', component: EdificiosComponent },
 ];
 
