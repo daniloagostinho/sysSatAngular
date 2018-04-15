@@ -51,6 +51,7 @@ import { RegistrarFuncionarioComponent } from './sys-sat/funcionario/registrar-f
 import { EditarFuncionarioComponent } from './sys-sat/funcionario/editar-funcionario/editar-funcionario.component';
 import { TextMaskModule } from 'angular2-text-mask';
 import { CurrencyMaskModule } from "ng2-currency-mask";
+import { JsonApiModule } from 'angular2-jsonapi';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { CurrencyMaskModule } from "ng2-currency-mask";
     EditarFuncionarioComponent
   ],
   imports: [
+    JsonApiModule,
     CurrencyMaskModule,
     TextMaskModule,
     FormsModule,
