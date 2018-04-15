@@ -2,7 +2,7 @@ import { SysSatComponent } from './sys-sat/sys-sat.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -44,7 +44,6 @@ import { FuncionarioComponent } from './sys-sat/funcionario/funcionario.componen
 import { RoutesModule } from './routes/routes.module';
 import { EdificiosComponent } from './sys-sat/edificios/edificios.component';
 import { CdkTableModule } from '@angular/cdk/table';
-import { HttpClientModule } from '@angular/common/http';
 import { OrdemServicoComponent } from './sys-sat/ordem-servico/ordem-servico.component';
 import { OrcamentosComponent } from './sys-sat/orcamentos/orcamentos.component';
 import { RegistrarFuncionarioComponent } from './sys-sat/funcionario/registrar-funcionario/registrar-funcionario.component';
@@ -52,6 +51,7 @@ import { EditarFuncionarioComponent } from './sys-sat/funcionario/editar-funcion
 import { TextMaskModule } from 'angular2-text-mask';
 import { CurrencyMaskModule } from "ng2-currency-mask";
 import { JsonApiModule } from 'angular2-jsonapi';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
