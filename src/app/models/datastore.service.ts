@@ -1,9 +1,10 @@
 import { JsonApiDatastoreConfig, JsonApiDatastore, DatastoreConfig } from 'angular2-jsonapi';
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { environment } from '../../environments/environment.prod';
 
 const config: DatastoreConfig = {
-  baseUrl: 'http://localhost:8000/v1/',
+  baseUrl: environment.sysSatApi,
   models: {
     //inserir minhas models aqui
   }
