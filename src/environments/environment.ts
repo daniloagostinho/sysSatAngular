@@ -5,6 +5,6 @@
 
 export const environment = {
   production: false,
-
-  sysSatApi: 'http://localhost:5000'
+  sysSatApi: 'http://localhost:5000',
+  main_logo: '../../assets/logo.png'
 };
