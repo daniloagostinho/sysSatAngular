@@ -52,6 +52,8 @@ import { TextMaskModule } from 'angular2-text-mask';
 import { CurrencyMaskModule } from "ng2-currency-mask";
 import { JsonApiModule } from 'angular2-jsonapi';
 import { HttpModule } from '@angular/http';
+import { RegistrarEdificiosComponent } from './sys-sat/edificios/registrar-edificios/registrar-edificios.component';
+import { EditarEdificioComponent } from './sys-sat/edificios/editar-edificio/editar-edificio.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { HttpModule } from '@angular/http';
     OrcamentosComponent,
     OrdemServicoComponent,
     RegistrarFuncionarioComponent,
-    EditarFuncionarioComponent
+    EditarFuncionarioComponent,
+    RegistrarEdificiosComponent,
+    EditarEdificioComponent
   ],
   imports: [
     JsonApiModule,
