@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'funcionarios', component: FuncionarioComponent },
   { path: 'edificios', component: EdificiosComponent },
   { path: 'orcamentos', component: OrcamentosComponent },
-  { path: 'ordem-servico', component: OrcamentosComponent },
+  { path: 'ordem-servicos', component: OrcamentosComponent },
   { path: 'registrar-funcionario', component: RegistrarFuncionarioComponent },
   { path: 'editar-funcionario', component: EditarFuncionarioComponent },
   { path: 'registrar-edificio', component: RegistrarEdificiosComponent },

@@ -1,3 +1,77 @@
-<p>
-  registrar-edificios works!
-</p>
+<div class="container">
+  <div class="row">
+    <mat-toolbar class="sys-sat-bckg">
+      <div class="col-3">
+        <span>Registrar Edifício</span>
+      </div>
+      <div class="col-2 ml-auto">
+        <button routerLink="/edificios" mat-button>Gerenciar edifícios</button>
+      </div>
+    </mat-toolbar>
+  </div>
+  <div class="row top-margin">
+    <div class="col-6">
+      <mat-form-field>
+        <input matInput placeholder="Nome do edifício">
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field>
+        <input matInput placeholder="Endereço">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <mat-form-field>
+        <mat-select placeholder="Função do responsável 1">
+          <mat-option *ngFor="let f of funcoes" [value]="f.value">
+            {{ f.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field>
+        <input matInput placeholder="Nome do responsável 1">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <mat-form-field>
+        <mat-select placeholder="Função do responsável 1">
+          <mat-option *ngFor="let f of funcoes" [value]="f.value">
+            {{ f.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field>
+        <input matInput placeholder="Nome do responsável 2">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <mat-form-field>
+        <mat-select placeholder="Função do responsável 3">
+          <mat-option *ngFor="let f of funcoes" [value]="f.value">
+            {{ f.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field>
+        <input matInput placeholder="Nome do responsável 3">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-1 ml-auto">
+      <button mat-raised-button class="sys-sat-bckg">Registrar</button>
+    </div>
+  </div>
+</div>
