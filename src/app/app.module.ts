@@ -54,6 +54,10 @@ import { JsonApiModule } from 'angular2-jsonapi';
 import { HttpModule } from '@angular/http';
 import { RegistrarEdificiosComponent } from './sys-sat/edificios/registrar-edificios/registrar-edificios.component';
 import { EditarEdificioComponent } from './sys-sat/edificios/editar-edificio/editar-edificio.component';
+import { RegistrarOrcamentosComponent } from './sys-sat/orcamentos/registrar-orcamentos/registrar-orcamentos.component';
+import { EditarOrcamentosComponent } from './sys-sat/orcamentos/editar-orcamentos/editar-orcamentos.component';
+import { RegistrarOrdemServicoComponent } from './sys-sat/ordem-servico/registrar-ordem-servico/registrar-ordem-servico.component';
+import { EditarOrdemServicoComponent } from './sys-sat/ordem-servico/editar-ordem-servico/editar-ordem-servico.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +70,11 @@ import { EditarEdificioComponent } from './sys-sat/edificios/editar-edificio/edi
     RegistrarFuncionarioComponent,
     EditarFuncionarioComponent,
     RegistrarEdificiosComponent,
-    EditarEdificioComponent
+    EditarEdificioComponent,
+    RegistrarOrcamentosComponent,
+    EditarOrcamentosComponent,
+    RegistrarOrdemServicoComponent,
+    EditarOrdemServicoComponent
   ],
   imports: [
     JsonApiModule,

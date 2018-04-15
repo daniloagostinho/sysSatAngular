@@ -6,6 +6,8 @@ import { OrdemServicoComponent } from '../sys-sat/ordem-servico/ordem-servico.co
 import { OrcamentosComponent } from '../sys-sat/orcamentos/orcamentos.component';
 import { RegistrarFuncionarioComponent } from '../sys-sat/funcionario/registrar-funcionario/registrar-funcionario.component';
 import { EditarFuncionarioComponent } from '../sys-sat/funcionario/editar-funcionario/editar-funcionario.component';
+import { EditarEdificioComponent } from '../sys-sat/edificios/editar-edificio/editar-edificio.component';
+import { RegistrarEdificiosComponent } from '../sys-sat/edificios/registrar-edificios/registrar-edificios.component';
 
 const routes: Routes = [
   { path: 'funcionarios', component: FuncionarioComponent },
@@ -13,6 +15,8 @@ const routes: Routes = [
   { path: 'orcamentos', component: OrcamentosComponent },
   { path: 'registrar-funcionario', component: RegistrarFuncionarioComponent },
   { path: 'editar-funcionario', component: EditarFuncionarioComponent },
+  { path: 'registrar-funcionario', component: RegistrarEdificiosComponent },
+  { path: 'editar-funcionario', component: EditarEdificioComponent },
 ];
 
 @NgModule({
