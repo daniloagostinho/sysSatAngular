@@ -10,9 +10,15 @@ export class SysSatComponent implements OnInit {
 
   mode = new FormControl('side');
 
+  sidenavContentDisabled = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  disableNavToggle(status: boolean){
+    this.sidenavContentDisabled = status;
   }
 
 }
