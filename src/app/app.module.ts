@@ -50,6 +50,7 @@ import { OrcamentosComponent } from './sys-sat/orcamentos/orcamentos.component';
 import { RegistrarFuncionarioComponent } from './sys-sat/funcionario/registrar-funcionario/registrar-funcionario.component';
 import { EditarFuncionarioComponent } from './sys-sat/funcionario/editar-funcionario/editar-funcionario.component';
 import { TextMaskModule } from 'angular2-text-mask';
+import { CurrencyMaskModule } from "ng2-currency-mask";
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { TextMaskModule } from 'angular2-text-mask';
     EditarFuncionarioComponent
   ],
   imports: [
+    CurrencyMaskModule,
     TextMaskModule,
     FormsModule,
     HttpModule,
