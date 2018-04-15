@@ -2,11 +2,14 @@ import { JsonApiDatastoreConfig, JsonApiDatastore, DatastoreConfig } from 'angul
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { environment } from '../../environments/environment.prod';
+import { Acesso } from './acesso.model';
+import { Funcionario } from './funcionario.model';
 
 const config: DatastoreConfig = {
   baseUrl: environment.sysSatApi,
   models: {
-    //inserir minhas models aqui
+    funcionario: Funcionario,
+    acesso: Acesso
   }
 }
 
