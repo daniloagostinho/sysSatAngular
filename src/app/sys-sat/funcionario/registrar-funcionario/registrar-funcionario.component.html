@@ -10,17 +10,32 @@
     </mat-toolbar>
   </div>
   <div class="row top-margin">
-
     <div class="col-6">
-
       <mat-form-field>
-        <input matInput placeholder="Favorite food" value="Sushi">
+        <input matInput placeholder="Nome completo">
       </mat-form-field>
     </div>
-
     <div class="col-6">
       <mat-form-field>
-        <input matInput placeholder="Favorite food" value="Sushi">
+        <input matInput [textMask]="{mask: cpfMask}" placeholder="CPF">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <mat-form-field>
+        <mat-select placeholder="Função">
+          <mat-option *ngFor="let f of funcoes" [value]="f.value">
+            {{ f.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field>
+        <input [textMask]="{mask: dateMask}" matInput [matDatepicker]="picker" placeholder="Data de admissão">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
     </div>
   </div>

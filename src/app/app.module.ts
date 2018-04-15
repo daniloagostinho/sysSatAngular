@@ -49,6 +49,7 @@ import { OrdemServicoComponent } from './sys-sat/ordem-servico/ordem-servico.com
 import { OrcamentosComponent } from './sys-sat/orcamentos/orcamentos.component';
 import { RegistrarFuncionarioComponent } from './sys-sat/funcionario/registrar-funcionario/registrar-funcionario.component';
 import { EditarFuncionarioComponent } from './sys-sat/funcionario/editar-funcionario/editar-funcionario.component';
+import { TextMaskModule } from 'angular2-text-mask';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { EditarFuncionarioComponent } from './sys-sat/funcionario/editar-funcion
     EditarFuncionarioComponent
   ],
   imports: [
+    TextMaskModule,
     FormsModule,
     HttpModule,
     HttpClientModule,
