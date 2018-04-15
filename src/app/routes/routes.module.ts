@@ -8,15 +8,24 @@ import { RegistrarFuncionarioComponent } from '../sys-sat/funcionario/registrar-
 import { EditarFuncionarioComponent } from '../sys-sat/funcionario/editar-funcionario/editar-funcionario.component';
 import { EditarEdificioComponent } from '../sys-sat/edificios/editar-edificio/editar-edificio.component';
 import { RegistrarEdificiosComponent } from '../sys-sat/edificios/registrar-edificios/registrar-edificios.component';
+import { RegistrarOrcamentosComponent } from '../sys-sat/orcamentos/registrar-orcamentos/registrar-orcamentos.component';
+import { EditarOrcamentosComponent } from '../sys-sat/orcamentos/editar-orcamentos/editar-orcamentos.component';
+import { RegistrarOrdemServicoComponent } from '../sys-sat/ordem-servico/registrar-ordem-servico/registrar-ordem-servico.component';
+import { EditarOrdemServicoComponent } from '../sys-sat/ordem-servico/editar-ordem-servico/editar-ordem-servico.component';
 
 const routes: Routes = [
   { path: 'funcionarios', component: FuncionarioComponent },
   { path: 'edificios', component: EdificiosComponent },
   { path: 'orcamentos', component: OrcamentosComponent },
+  { path: 'ordem-servico', component: OrcamentosComponent },
   { path: 'registrar-funcionario', component: RegistrarFuncionarioComponent },
   { path: 'editar-funcionario', component: EditarFuncionarioComponent },
-  { path: 'registrar-funcionario', component: RegistrarEdificiosComponent },
-  { path: 'editar-funcionario', component: EditarEdificioComponent },
+  { path: 'registrar-edificio', component: RegistrarEdificiosComponent },
+  { path: 'editar-edificio', component: EditarEdificioComponent },
+  { path: 'registrar-orcamento', component: RegistrarOrcamentosComponent },
+  { path: 'editar-orcamento', component: EditarOrcamentosComponent },
+  { path: 'registrar-ordem-servico', component: RegistrarOrdemServicoComponent },
+  { path: 'editar-ordem-servico', component: EditarOrdemServicoComponent },
 ];
 
 @NgModule({
