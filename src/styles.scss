@@ -33,7 +33,6 @@ body {
   margin-top: 2em;
 }
 
-
 .top-margin{
   margin-top: 1em !important;
 }
@@ -44,4 +43,13 @@ body {
 
 .mat-form-field{
   width: 100% !important;
+}
+
+.align-right{
+  float: right !important;
+}
+
+.sys-sat-bckg{
+  background-color: #214478 !important;
+  color: white !important;
 }
