@@ -1,59 +1,61 @@
 <div class="container">
-  <div class="row">
-    <mat-toolbar class="sys-sat-bckg">
-      <div class="col-3">
-        <span>Registrar Funcionário</span>
+  <div class="col-12">
+    <div class="row">
+      <mat-toolbar class="sys-sat-bckg">
+        <div class="col-3">
+          <span>Registrar Funcionário</span>
+        </div>
+        <div class="col-2 ml-auto">
+          <button routerLink="/funcionarios" mat-button>Gerenciar funcionários</button>
+        </div>
+      </mat-toolbar>
+    </div>
+    <div class="row top-margin">
+      <div class="col-6">
+        <mat-form-field>
+          <input matInput placeholder="Nome completo">
+        </mat-form-field>
       </div>
-      <div class="col-2 ml-auto">
-        <button routerLink="/funcionarios" mat-button>Gerenciar funcionários</button>
+      <div class="col-6">
+        <mat-form-field>
+          <input matInput [textMask]="{mask: cpfMask}" placeholder="CPF">
+        </mat-form-field>
       </div>
-    </mat-toolbar>
-  </div>
-  <div class="row top-margin">
-    <div class="col-6">
-      <mat-form-field>
-        <input matInput placeholder="Nome completo">
-      </mat-form-field>
     </div>
-    <div class="col-6">
-      <mat-form-field>
-        <input matInput [textMask]="{mask: cpfMask}" placeholder="CPF">
-      </mat-form-field>
+    <div class="row">
+      <div class="col-6">
+        <mat-form-field>
+          <mat-select placeholder="Função">
+            <mat-option *ngFor="let f of funcoes" [value]="f.value">
+              {{ f.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-6">
+        <mat-form-field>
+          <input [textMask]="{mask: dateMask}" matInput [matDatepicker]="picker" placeholder="Data de admissão">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-6">
-      <mat-form-field>
-        <mat-select placeholder="Função">
-          <mat-option *ngFor="let f of funcoes" [value]="f.value">
-            {{ f.viewValue }}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
+    <div class="row">
+      <div class="col-6">
+        <mat-form-field>
+          <input matInput placeholder="Login">
+        </mat-form-field>
+      </div>
+      <div class="col-6">
+        <mat-form-field>
+          <input matInput placeholder="Senha">
+        </mat-form-field>
+      </div>
     </div>
-    <div class="col-6">
-      <mat-form-field>
-        <input [textMask]="{mask: dateMask}" matInput [matDatepicker]="picker" placeholder="Data de admissão">
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-6">
-      <mat-form-field>
-        <input matInput placeholder="Login">
-      </mat-form-field>
-    </div>
-    <div class="col-6">
-      <mat-form-field>
-        <input matInput placeholder="Senha">
-      </mat-form-field>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-1 ml-auto">
-      <button mat-raised-button class="sys-sat-bckg">Registrar</button>
+    <div class="row">
+      <div class="col-1 ml-auto">
+        <button mat-raised-button class="sys-sat-bckg">Registrar</button>
+      </div>
     </div>
   </div>
 </div>
