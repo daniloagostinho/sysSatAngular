@@ -17,58 +17,23 @@
     </div>
     <div class="col-6">
       <mat-form-field>
-        <input matInput placeholder="Endereço">
+        <input matInput placeholder="Cidade">
       </mat-form-field>
     </div>
   </div>
   <div class="row">
     <div class="col-6">
       <mat-form-field>
-        <mat-select placeholder="Função do responsável 1">
-          <mat-option *ngFor="let f of funcoes" [value]="f.value">
-            {{ f.viewValue }}
-          </mat-option>
-        </mat-select>
+        <input matInput placeholder="Bairro">
       </mat-form-field>
     </div>
     <div class="col-6">
       <mat-form-field>
-        <input matInput placeholder="Nome do responsável 1">
+        <input matInput placeholder="Rua">
       </mat-form-field>
     </div>
   </div>
-  <div class="row">
-    <div class="col-6">
-      <mat-form-field>
-        <mat-select placeholder="Função do responsável 1">
-          <mat-option *ngFor="let f of funcoes" [value]="f.value">
-            {{ f.viewValue }}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-    <div class="col-6">
-      <mat-form-field>
-        <input matInput placeholder="Nome do responsável 2">
-      </mat-form-field>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-6">
-      <mat-form-field>
-        <mat-select placeholder="Função do responsável 3">
-          <mat-option *ngFor="let f of funcoes" [value]="f.value">
-            {{ f.viewValue }}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-    <div class="col-6">
-      <mat-form-field>
-        <input matInput placeholder="Nome do responsável 3">
-      </mat-form-field>
-    </div>
-  </div>
+
   <div class="row">
     <div class="col-1 ml-auto">
       <button mat-raised-button class="sys-sat-bckg">Registrar</button>

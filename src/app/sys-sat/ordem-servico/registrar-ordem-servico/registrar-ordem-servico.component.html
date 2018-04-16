@@ -1,3 +1,67 @@
-<p>
-  registrar-ordem-servico works!
-</p>
+<div class="container">
+  <div class="row">
+    <mat-toolbar class="sys-sat-bckg">
+      <div class="col-3">
+        <span>Registrar Ordem de Serviço</span>
+      </div>
+      <div class="col-2 ml-auto">
+        <button routerLink="/ordem-servicos" mat-button>Gerenciar ordem de serviços</button>
+      </div>
+    </mat-toolbar>
+  </div>
+  <div class="row top-margin">
+    <div class="col-6">
+      <mat-form-field>
+        <mat-select placeholder="Edifício">
+          <mat-option *ngFor="let e of edificios" [value]="e.value">
+            {{ e.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field>
+        <input [textMask]="{mask: dateMask}" matInput [matDatepicker]="picker" placeholder="Data do orçamento">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <mat-form-field>
+        <input matInput placeholder="Resposável pelo edifício">
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field>
+        <mat-select placeholder="Tipo serviço">
+          <mat-option *ngFor="let f of servico" [value]="f.value">
+            {{ f.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <mat-form-field>
+        <textarea matInput placeholder="Descrição do serviço prestado" matTextareaAutosize matAutosizeMinRows="1" matAutosizeMaxRows="5"></textarea>
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field>
+        <mat-select placeholder="Funcionário responsável">
+          <mat-option *ngFor="let f of funcionarios" [value]="f.value">
+            {{ f.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-1 ml-auto">
+      <button mat-raised-button class="sys-sat-bckg">Registrar</button>
+    </div>
+  </div>
+</div>
